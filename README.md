@@ -9,7 +9,7 @@ To install `qfuncMM` from github, type in R console
 if (!require("devtools")){
     install.packages("devtools")
 }
-devtools::install_github("cbtran/qfuncMM")
+remotes::install_github("roobnloo/qfuncMM")
 ```
 
 The package includes simulated data for testing. To run the method on the example data, run the following:
@@ -24,4 +24,4 @@ result <- qfuncMM_stage2_reml(outfile1, outfile2, out_dir)
 print(paste("Estimated rho:", round(result$stage2$rho, 3)))
 ```
 
-Code to reproduce simulation results from the paper is available on github at [https://github.com/cbtran/qfuncMM-reproducible](https://github.com/cbtran/qfuncMM-reproducible).
+Code to reproduce simulation results from the paper is available on github at [https://github.com/roobnloo/qfuncMM-reproducible](https://github.com/roobnloo/qfuncMM-reproducible).
